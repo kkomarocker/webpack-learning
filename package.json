@@ -1,0 +1,18 @@
+{
+  "name": "webpack-learning",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode=none --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "path": "^0.12.7",
+    "webpack": "^4.28.2",
+    "webpack-cli": "^3.1.2"
+  }
+}
