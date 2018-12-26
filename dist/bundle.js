@@ -81,15 +81,20 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/main.js");
 /******/ })
 /************************************************************************/
-/******/ ([
-/* 0 */
+/******/ ({
+
+/***/ "./src/main.js":
+/*!*********************!*\
+  !*** ./src/main.js ***!
+  \*********************/
+/*! no static exports found */
 /***/ (function(module, exports) {
 
-alert("I did it with webpack!!");
-
+eval("alert(\"I did it with webpack!!\");\n\n\n//# sourceURL=webpack:///./src/main.js?");
 
 /***/ })
-/******/ ]);
+
+/******/ });
