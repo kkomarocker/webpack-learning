@@ -86,14 +86,27 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/Notification.js":
+/*!*****************************!*\
+  !*** ./src/Notification.js ***!
+  \*****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nconst notify = msg => {\n  alert(msg);\n};\n\nconst log = msg => {\n  console.log(msg);\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  notify,\n  log\n});\n\n\n//# sourceURL=webpack:///./src/Notification.js?");
+
+/***/ }),
+
 /***/ "./src/main.js":
 /*!*********************!*\
   !*** ./src/main.js ***!
   \*********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("alert(\"I did it with webpack!!\");\n\n\n//# sourceURL=webpack:///./src/main.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Notification__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Notification */ \"./src/Notification.js\");\n\n\n_Notification__WEBPACK_IMPORTED_MODULE_0__[\"default\"].notify(\"What???\");\n_Notification__WEBPACK_IMPORTED_MODULE_0__[\"default\"].log(\"logging from console\");\n\n\n//# sourceURL=webpack:///./src/main.js?");
 
 /***/ })
 

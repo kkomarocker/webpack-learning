@@ -1,1 +1,4 @@
-alert("I did it with webpack!!");
+import notification from "./Notification";
+
+notification.notify("What???");
+notification.log("logging from console");
