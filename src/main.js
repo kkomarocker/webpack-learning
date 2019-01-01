@@ -1,8 +1,10 @@
+import "../css/main.scss";
 import notification from "./Notification";
 
 class Form {
   constructor() {
-    alert("using babel is much nicer");
+    notification.notify("using babel is much nicer");
+    notification.log("Babel is up and running");
   }
 }
 
