@@ -1,4 +1,3 @@
-import "../css/main.scss";
 import notification from "./Notification";
 
 class Form {

@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/main.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -117,7 +117,18 @@ eval("__webpack_require__.r(__webpack_exports__);\nvar notify = function notify(
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../css/main.scss */ \"./css/main.scss\");\n/* harmony import */ var _css_main_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_main_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _Notification__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Notification */ \"./src/Notification.js\");\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\n\n\n\nvar Form = function Form() {\n  _classCallCheck(this, Form);\n\n  _Notification__WEBPACK_IMPORTED_MODULE_1__[\"default\"].notify(\"using babel is much nicer\");\n  _Notification__WEBPACK_IMPORTED_MODULE_1__[\"default\"].log(\"Babel is up and running\");\n};\n\nnew Form();\n\n//# sourceURL=webpack:///./src/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Notification__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Notification */ \"./src/Notification.js\");\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\n\n\nvar Form = function Form() {\n  _classCallCheck(this, Form);\n\n  _Notification__WEBPACK_IMPORTED_MODULE_0__[\"default\"].notify(\"using babel is much nicer\");\n  _Notification__WEBPACK_IMPORTED_MODULE_0__[\"default\"].log(\"Babel is up and running\");\n};\n\nnew Form();\n\n//# sourceURL=webpack:///./src/main.js?");
+
+/***/ }),
+
+/***/ 0:
+/*!*******************************************!*\
+  !*** multi ./src/main.js ./css/main.scss ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("__webpack_require__(/*! ./src/main.js */\"./src/main.js\");\nmodule.exports = __webpack_require__(/*! ./css/main.scss */\"./css/main.scss\");\n\n\n//# sourceURL=webpack:///multi_./src/main.js_./css/main.scss?");
 
 /***/ })
 

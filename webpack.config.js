@@ -1,15 +1,16 @@
 const webpack = require("webpack");
 const path = require("path");
 const MiniCssExtract = require("mini-css-extract-plugin");
+const inProduction = process.env.NODE_ENV === "production";
 
 module.exports = {
   entry: {
-    app: "./src/main.js"
+    app: ["./src/main.js", "./css/main.scss"]
   },
 
   output: {
     path: path.resolve(__dirname, "./dist"),
-    filename: "bundle.js"
+    filename: "[name].js"
   },
 
   module: {
@@ -20,7 +21,8 @@ module.exports = {
           {
             loader: MiniCssExtract.loader
           },
-          "css-loader"
+          "css-loader",
+          "sass-loader"
         ]
       },
 
@@ -33,9 +35,14 @@ module.exports = {
   },
 
   // need to use mini-css-extract-plugin to extract css when webpack v4 is in play.
-  plugins: [new MiniCssExtract("[name].css")]
+  plugins: [
+    new MiniCssExtract("[name].css"),
+    new webpack.LoaderOptionsPlugin({
+      minimize: inProduction
+    })
+  ]
 };
 
-if (process.env.NODE_ENV === "production") {
+if (inProduction) {
   module.exports.optimization.minimize = true;
 }
