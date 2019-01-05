@@ -16,5 +16,14 @@ module.exports = {
 
       { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" }
     ]
-  }
+  },
+  optimization: {
+    minimize: false
+  },
+
+  plugins: []
 };
+
+if (process.env.NODE_ENV === "production") {
+  module.exports.optimization.minimize = true;
+}

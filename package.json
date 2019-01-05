@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack --mode=development --watch",
+    "production": "NODE_ENV=production webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -12,8 +13,8 @@
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
     "babel-loader": "^8.0.4",
-    "babel-preset-es2015": "^6.24.1",
     "css-loader": "^2.1.0",
     "node-sass": "^4.11.0",
     "path": "^0.12.7",
