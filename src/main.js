@@ -2,8 +2,7 @@ import notification from "./Notification";
 
 class Form {
   constructor() {
-    notification.notify("using babel is much nicer");
-    notification.log("Babel is up and running");
+    notification.notify("sada..");
   }
 }
 

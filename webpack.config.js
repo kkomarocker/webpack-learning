@@ -1,5 +1,6 @@
 const webpack = require("webpack");
 const path = require("path");
+const CleanWebpackPlugin = require("clean-webpack-plugin");
 
 const inProduction = process.env.NODE_ENV === "production";
 
@@ -10,7 +11,7 @@ module.exports = {
 
   output: {
     path: path.resolve(__dirname, "./dist"),
-    filename: "[name].js"
+    filename: "[name].[chunkhash].js"
   },
 
   module: {
@@ -35,8 +36,13 @@ module.exports = {
     minimize: false
   },
 
-  // need to use mini-css-extract-plugin to extract css when webpack v4 is in play.
   plugins: [
+    new CleanWebpackPlugin(["dist"], {
+      root: __dirname,
+      verbose: true,
+      dry: false,
+      watch: true
+    }),
     new webpack.LoaderOptionsPlugin({
       minimize: inProduction
     })
