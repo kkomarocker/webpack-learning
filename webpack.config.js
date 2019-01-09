@@ -3,15 +3,16 @@ const path = require("path");
 const CleanWebpackPlugin = require("clean-webpack-plugin");
 
 const inProduction = process.env.NODE_ENV === "production";
+const ENTRIES = ["./src/main.js", "./src/subMain.js", "./css/main.scss"];
 
 module.exports = {
   entry: {
-    app: ["./src/main.js", "./css/main.scss"]
+    app: ENTRIES
   },
 
   output: {
     path: path.resolve(__dirname, "./dist"),
-    filename: "[name].[chunkhash].js"
+    filename: "[name].js"
   },
 
   module: {
